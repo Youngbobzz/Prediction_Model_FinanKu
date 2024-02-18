@@ -4,7 +4,7 @@ Concern about delays in credit card payments on FinanKu which will harm business
 ### **OBJECTIVE**
 Create a model that can predict at least 60% of customers who will experience late credit card payments [Accuracy & Recall above 60%]
 
-### **VARIABEL YANG TERSEDIA**
+### **AVAILABLE VARIABLES**
 From the dataset we have, there are several data available:
 
 
