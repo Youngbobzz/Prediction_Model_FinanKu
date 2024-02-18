@@ -1,33 +1,33 @@
 ### **PROBLEM STATEMENT**
-Kekhawatiran adanya keterlambatan pembayaran kartu kredit pada FinanKu yang akan merugikan bisnis. Sehingga orang-orang yang memiliki potensi untuk mengalami keterlambatan bayar bisa diprediksi lebih cepat untuk menentukan strategi yang sesuai dalam menghadapi kondisi di masa mendatang.
+Concern about delays in credit card payments on FinanKu which will harm business. So that people who have the potential to experience late payments can be predicted more quickly to determine appropriate strategies for dealing with future conditions.
 
 ### **OBJECTIVE**
-Membuat sebuah model yang dapat memprediksi setidaknya 60% dari pelanggan yang akan mengalami telat bayar kartu kredit [Accuracy & Recall di atas 60%]
+Create a model that can predict at least 60% of customers who will experience late credit card payments [Accuracy & Recall above 60%]
 
 ### **VARIABEL YANG TERSEDIA**
-Dari dataset yang dimiliki terdapat beberapa data yang tersedia:
+From the dataset we have, there are several data available:
 
 
 ---
 
 
 **1. Customer ID:** Unique ID Customer\
-**2. Branch:** Lokasi Cabang Nasabah Terdaftar\
-**3. City:** Lokasi Kota Nasabah Terdaftar\
-**4. Age:** Umur Nasabah Pada Periode Observasi\
-**5. Avg. Annual Income/Month:** Rata-rata penghasilan nasabah dalam satu tahun\
+**2. Branch:** Registered Customer Branch Location\
+**3. City:** Location of Registered Customer's City\
+**4. Age:** Customer Age During the Observation Period\
+**5. Avg. Annual Income/Month:** Average customer income in one year\
 **6. Balance (Q1-Q4):** Saldo mengendap yang dimiliki nasabah di akhir kuartal\
-**7. Num of Products (Q1-Q4):** Jumlah kepemilikan produk nasabah di akhir kuartal\
-**8. HasCrCard (Q1-Q4):** Status kepemilikan produk kartu kredit nasabah di akhir kuartal\
-**9. Active Member (Q1-Q4):** Status keaktifan nasabah\
-**10. Unpaid Tagging:** Status nasabah gagal bayar
+**7. Num of Products (Q1-Q4):** The customer's settled balance at the end of the quarter\
+**8. HasCrCard (Q1-Q4):** Customer credit card product ownership status at the end of the quarter\
+**9. Active Member (Q1-Q4):** Customer active status\
+**10. Unpaid Tagging:** Customer status in default
 
 # **EXPERIMENT**
-Periode Tinjauan:
-1. Nasabah direview selama satu tahun terakhir
-2. Nasabah direview selama 6 bulan terakhir
+Review Period:
+1. Customers are reviewed for the past year
+2. Customers are reviewed for the last 6 months
 
-Penyesuaian Variabel:
-1. Balance dilihat dari rata-rata selama horizon waktu & dilihat perubahan pada akhir tinjauan dan awal tinjauan
-2. Melihat kepemilikan jumlah produk dari rata-rata, maksimum, dan minimum pada periode tinjauan
-3. Status keaktifan nasabah dilihat dalam bentuk bulan
+Variable Adjustment:
+1. Balance is seen as an average over a time horizon & changes are seen at the end of the review and the beginning of the review
+2. View the average, maximum, and minimum product count holdings in the review period
+3. Customer activity status is seen in the form of months
